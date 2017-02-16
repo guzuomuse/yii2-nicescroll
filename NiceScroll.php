@@ -37,6 +37,7 @@ class NiceScroll extends \yii\base\Widget {
 //        return $this->id;
     }
     public function registerJs(){
+        $options = '';
         foreach ($this->pluginOptions as $k=>$v){
             $options.=$k.':'.  Json::encode($v).',';
         }
